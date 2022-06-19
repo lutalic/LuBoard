@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bodyOfBoardCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+
+    android:background="@drawable/background_table"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/title_board"
+        android:layout_width="match_parent"
+        android:minWidth="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:fontFamily="@font/ubuntu_bold"
+        android:includeFontPadding="false"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linear_users"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="teeeeext" />
+
+    <LinearLayout
+        android:id="@+id/linear_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="14dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_group_24"
+            android:layout_margin="5dp"
+             />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

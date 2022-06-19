@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D7E9FF</color>
+    <color name="colorPrimaryDark">#6893EA</color>
+    <color name="colorAccent">#817ADA</color>
+
+    <color name="colorSearchIcon">#0B0A0A</color>
+    <color name="colorTextHint">#121111</color>
+    <color name="colorQuickActionBackground">#BECBF4</color>
+    <color name="colorIcons">#231F1F</color>
+    <color name="colorTextSubtitle">#000000</color>
+    <color name="colorNoteTextSubtitle">#000000</color>
+    <color name="colorDefaultNoteColor">#97BAFF</color>
+    <color name="colorMiscellaneousBackground">#000F8D</color>
+
+    <color name="colorNoteColor2">#FDBE3B</color>
+    <color name="colorNoteColor3">#FF4842</color>
+    <color name="colorNoteColor4">#3A52FC</color>
+    <color name="colorNoteColor5">#000000</color>
+    <color name="colorDelete">#FF4842</color>
+    <color name="colorSearchBackground">#5080E1</color>
+
+    <!--<color name="secondary_main">#FBD669</color>
+    <color name="secondary_light">#ffddc1</color>
+    <color name="secondary_dark">#D3C988</color>-->
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+
+
+
+
+
+
+
+    <!--Light blue 200-->
+    <color name="primary_main">#6893EA</color>
+    <color name="primary_light">#D7E9FF</color>
+    <color name="primary_dark">#817ADA</color>
+    <!--Deep orange 200-->
+    <color name="secondary_main">#FBD669</color>
+    <color name="secondary_light">#ffddc1</color>
+    <color name="secondary_dark">#D3C988</color>
+
+
+    <color name="dark_primary_main">#3a1e5a</color>
+    <color name="dark_primary_light">#674787</color>
+    <color name="dark_primary_dark">#B87CFF</color>
+    <color name="dark_secondary_main">#00546e</color>
+    <color name="dark_secondary_light">#42809c</color>
+    <color name="dark_secondary_dark">#F8FDFF</color>
+
+    <color name="defaultDashboardColor">#008800</color>
+</resources>

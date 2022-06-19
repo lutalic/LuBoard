@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "839153863573",
+    "firebase_url": "https://luboard-3d97f-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "luboard-3d97f",
+    "storage_bucket": "luboard-3d97f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839153863573:android:0d22b369de63e7b5a0049c",
+        "android_client_info": {
+          "package_name": "com.lutalic.luboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839153863573-g9ecrruua9f5fbfj980n04d06791apdt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTNIfhguG_vkiexjOSWaEnCBATFlcSwY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839153863573-g9ecrruua9f5fbfj980n04d06791apdt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

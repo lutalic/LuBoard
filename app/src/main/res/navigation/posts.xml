@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings"
+    app:startDestination="@id/postsFragment">
+
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.lutalic.luboard.presentation.main.tabs.posts.PostsFragment"
+        android:label="@string/posts"
+        tools:layout="@layout/fragment_posts">
+
+        <action
+            android:id="@+id/action_postsFragment_to_postFragment2"
+            app:destination="@id/postFragment2" />
+        <action
+            android:id="@+id/action_postsFragment_to_editPostFragment2"
+            app:destination="@id/editPostFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment2"
+        android:name="com.lutalic.luboard.presentation.main.tabs.maintab.post.PostFragment"
+        android:label="Post"
+        tools:layout="@layout/fragment_post" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPostFragment2"
+        android:name="com.lutalic.luboard.presentation.main.tabs.maintab.post.EditPostFragment"
+        android:label="fagment_edit_post"
+        tools:layout="@layout/fagment_edit_new_post" >
+        <argument
+            android:name="post"
+            app:argType="com.lutalic.luboard.model.database.entities.Post" />
+    </fragment>
+</navigation>

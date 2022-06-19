@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard"
+    app:startDestination="@id/listBoardFragment">
+
+    <fragment
+        android:id="@+id/listBoardFragment"
+        android:name="com.lutalic.luboard.presentation.main.tabs.maintab.boardslist.BoardListFragment"
+        android:label="@string/screen_list_boards"
+        tools:layout="@layout/fragment_board_list">
+        <action
+            android:id="@+id/action_dashboardFragment_to_boxFragment"
+            app:destination="@id/boardFragment" />
+        <action
+            android:id="@+id/action_listBoardFragment_to_addNewBoardFragment"
+            app:destination="@id/addNewBoardFragment" />
+        <action
+            android:id="@+id/action_listBoardFragment_to_editBoardFragment"
+            app:destination="@id/editBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.lutalic.luboard.presentation.main.tabs.maintab.board.BoardFragment"
+        android:label="@string/screen_board"
+        tools:layout="@layout/fragment_board">
+        <action
+            android:id="@+id/action_boardFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+        <argument
+            android:name="board"
+            app:argType="com.lutalic.luboard.model.database.entities.Table" />
+        <action
+            android:id="@+id/action_boardFragment_to_addNewPostFragment"
+            app:destination="@id/addNewPostFragment" />
+        <action
+            android:id="@+id/action_boardFragment_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewBoardFragment"
+        android:name="com.lutalic.luboard.presentation.main.tabs.maintab.boardslist.AddNewBoardFragment"
+        android:label="Add board"
+        tools:layout="@layout/fagment_add_new_board" />
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.lutalic.luboard.presentation.main.tabs.maintab.post.PostFragment"
+        android:label="Post">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewPostFragment"
+        android:name="com.lutalic.luboard.presentation.main.tabs.maintab.post.AddNewPostFragment"
+        android:label="Add post"
+        tools:layout="@layout/fagment_add_new_post" >
+        <argument
+            android:name="boardId"
+            app:argType="integer" />
+        <argument
+            android:name="boardName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editBoardFragment"
+        android:name="com.lutalic.luboard.presentation.main.tabs.maintab.board.EditBoardFragment"
+        android:label="EditBoardFragment" >
+        <argument
+            android:name="table"
+            app:argType="com.lutalic.luboard.model.database.entities.Table" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPostFragment"
+        android:name="com.lutalic.luboard.presentation.main.tabs.maintab.post.EditPostFragment"
+        android:label="fagment_edit_post"
+        tools:layout="@layout/fagment_edit_new_post" >
+        <argument
+            android:name="post"
+            app:argType="com.lutalic.luboard.model.database.entities.Post" />
+    </fragment>
+</navigation>
